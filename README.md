@@ -1,3 +1,5 @@
+# Bash-style shell in C
+
 Introduction
 
 	- This project intends to create a bash-style shell in C that simulates normal bash shell.
