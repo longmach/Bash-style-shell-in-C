@@ -1,4 +1,7 @@
 This project intends to create a bash-style shell in C that simulates normal bash shell.
+The program includes built-in commands such as exit, cd, and status.
+The program can run child processes, handle signals from the OS, allow the processes to be ran in the
+background, redirect file descriptor, and handle all other input commands like a bash shell.
 
 Introduction
 
