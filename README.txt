@@ -8,12 +8,10 @@ Introduction
     This project includes 2 files:
     - smallsh.c         			(This implements the small shell)
     - Makefile					
-	
-Requirements
-
-    1. Unzip the files in your testing environment.
 
 Testing
+
+	- Unzip the files in your testing environment.
 	- Open the terminal
 	- To compile file, run the following command in the terminal: 
 		make	
