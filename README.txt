@@ -1,5 +1,3 @@
-Assignment 3: smallsh
-
 Introduction
 
     This project includes 2 files:
@@ -11,7 +9,7 @@ Requirements
     1. Unzip the files in your testing environment.
 
 Testing
-	- SSH to the os1.
+	- Open the terminal
 	- To compile file, run the following command in the terminal: 
 		make	
 	- To test, run the following commands in the terminal:
