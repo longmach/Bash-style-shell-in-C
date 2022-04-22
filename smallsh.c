@@ -1,7 +1,6 @@
 /* 
 * Long Mach
-* CS 344-400
-* Assignment 3: smallsh 
+smallsh 
 */
 
 #include <dirent.h>
@@ -44,7 +43,6 @@ void handle_SIGTSTP(int);                               //function to handle SIG
 
 int main()
 {
-    //Signal handlers adapted from : https://canvas.oregonstate.edu/courses/1830250/pages/exploration-signal-handling-api?module_item_id=21468881
     //SIGINT handler- set main to ignore it
     struct sigaction SIGINT_action = {{0}};     // Fill out the SIGINT_action struct
     SIGINT_action.sa_handler = SIG_IGN;         // Register SIG_IGN as the signal handler to ignore in main
@@ -310,10 +308,6 @@ void printCmd (struct command *aCmd)
 
 /* 
 * function to run command
-# Citation for the following function:
-# Date: 10/30/2021
-# Copied from /OR/ Adapted from /OR/ Based on:
-* https://canvas.oregonstate.edu/courses/1830250/pages/exploration-process-api-executing-a-new-program?module_item_id=21468874
 */
 void runCmd (struct command *newCmd, int *childStatus, struct sigaction SIGINT_action)
 {
@@ -502,7 +496,6 @@ void runCmd (struct command *newCmd, int *childStatus, struct sigaction SIGINT_a
 }
 
 //built-in function for status
-//Adapted from: https://canvas.oregonstate.edu/courses/1830250/pages/exploration-process-api-monitoring-child-processes?module_item_id=21468873
 void printExitStatus(int childExitMethod) {
 	
 	if (WIFEXITED(childExitMethod)) {
@@ -515,7 +508,6 @@ void printExitStatus(int childExitMethod) {
 }
 
 /* Our signal handler for SIGINT */
-// Adapted from: https://canvas.oregonstate.edu/courses/1830250/pages/exploration-signal-handling-api?module_item_id=21468881
 void handle_SIGTSTP(int signo){
 	if(allowBackground == 1)
     {
