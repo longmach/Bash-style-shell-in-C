@@ -1,3 +1,5 @@
+This project intends to create a bash-style shell in C that simulates normal bash shell.
+
 Introduction
 
     This project includes 2 files:
